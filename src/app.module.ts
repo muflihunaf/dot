@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import { Module, Post } from '@nestjs/common';
+import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ApiModule } from './api/api.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-
+import { Post } from './api/entities/post.entity';
 @Module({
   imports: [
     ConfigModule.forRoot(),
