@@ -2,10 +2,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ApiModule } from './api/api.module';
+import { ApiModule } from './modules/api/api.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
-import { Post } from './api/entities/post.entity';
+import { Post } from './modules/api/entities/post.entity';
 @Module({
   imports: [
     ConfigModule.forRoot(),
